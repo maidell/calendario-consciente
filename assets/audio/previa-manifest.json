@@ -1,0 +1,44 @@
+{
+  "purpose": "Voz automática de prévia; não é gravação autoral da equipe.",
+  "voice": "Microsoft Maria Desktop",
+  "language": "pt-BR",
+  "rate": 0,
+  "files": [
+    {
+      "chapter": 1,
+      "file": "cap1-previa.wav",
+      "encoding": 1,
+      "channels": 1,
+      "sampleRate": 22050,
+      "bytesPerSecond": 44100,
+      "bitsPerSample": 16,
+      "durationSeconds": 40.637,
+      "bytes": 1792136,
+      "textSha256": "a9bfefce2bb66c0594a73616f319b5b3bfd753ab18dde05c9592bacf9c273f66"
+    },
+    {
+      "chapter": 6,
+      "file": "cap6-previa.wav",
+      "encoding": 1,
+      "channels": 1,
+      "sampleRate": 22050,
+      "bytesPerSecond": 44100,
+      "bitsPerSample": 16,
+      "durationSeconds": 47.067,
+      "bytes": 2075714,
+      "textSha256": "9a34e50ebea770fda93a1c8fc203a83e93a4ce970967e865bbc0fa5688f13c46"
+    },
+    {
+      "chapter": 8,
+      "file": "cap8-previa.wav",
+      "encoding": 1,
+      "channels": 1,
+      "sampleRate": 22050,
+      "bytesPerSecond": 44100,
+      "bitsPerSample": 16,
+      "durationSeconds": 45.832,
+      "bytes": 2021216,
+      "textSha256": "a7039164a77dce253534f5705699334ba0c602bfe5fa029f75c2d0b9ee68174a"
+    }
+  ]
+}
