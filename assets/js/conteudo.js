@@ -2,11 +2,11 @@
 // Reflexões autorais extraídas da proposta completa; capítulo 7 alinhado ao card.
 // Os caminhos das imagens são relativos à raiz do site, inclusive sob um prefixo de projeto.
 // Nenhuma gravação de teste é associada a um capítulo por este catálogo.
-// Inspeção do Forms em 03/11/2026: opções provisórias e campo de reflexão ausente.
-export const FORM_STATUS = 'preparacao';
+// Forms conferido em 05/11/2026: 11 capítulos e campos para reflexão disponíveis.
+export const FORM_STATUS = 'pronto';
 export const FORM_URL = "https://forms.cloud.microsoft/pages/responsepage.aspx?id=TXb95_9G7kGMjOQeiklo7XP4ECtv_c5GjTW5LO9W11JUMDdZWkIxS0VMUzg2VEs3T0ZYQkpOTzNUTS4u&route=shorturl";
 
-export const CREDITO = "Inspirado em Pequeno manual antirracista, de Djamila Ribeiro. Reflexões e adaptações autorais da equipe da Faculdade Senac Portão.";
+export const CREDITO = "Embasado em Pequeno manual antirracista, de Djamila Ribeiro. Situações e reflexões autorais da equipe do SENAC EAD PORTÃO.";
 
 export const CAPITULOS = [
   {

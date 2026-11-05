@@ -1,17 +1,15 @@
-# Ajustes do formulário da ação
+# Formulário da ação
 
-Inspeção de leitura em 03/11/2026, pelo endereço já impresso nos cartazes. Nenhuma resposta foi enviada e nenhuma configuração do Forms foi alterada.
+O Microsoft Forms da ação foi conferido no navegador em **05/11/2026**, pelo endereço já impresso nos cartazes. Nenhuma resposta foi enviada e nenhuma configuração do Forms foi alterada durante a conferência.
 
-O formulário abre com o título **Registro de participação no projeto: Pequenas escutas, grandes reflexões**. Atualmente apresenta apenas a pergunta “Para qual capítulo do livro você gostaria de registrar sua percepção?”, com alternativas **Opção 1** e **Opção 2**. Não foi encontrado campo para escrever uma reflexão. O aviso da página informa que nome e e-mail não são coletados automaticamente, a menos que a própria pessoa os forneça.
+O formulário abre com o título **Registro de participação no projeto: Pequenas escutas, grandes reflexões**. A pergunta “Qual situação deseja compartilhar sua percepção?” oferece uma lista suspensa com os **11 capítulos corretos**, correspondentes ao catálogo em `assets/js/conteudo.js`. Também estão disponíveis **três campos abertos** para registrar:
 
-Para completar a experiência prevista, configurar o mesmo Forms, preservando sua URL:
+1. Reflexão ou aprendizado.
+2. Atitudes.
+3. Mensagem ou compromisso.
 
-1. Substituir as duas opções provisórias pelos 11 capítulos, com número e título do catálogo em `assets/js/conteudo.js`.
-2. Acrescentar uma pergunta de texto longo: **Que reflexão essa situação despertou em você?**. Uma orientação possível é “Compartilhe uma percepção ou uma atitude que você pode experimentar. Evite identificar outras pessoas.”
-3. Manter a participação voluntária e conferir o acesso para o público da ação. A identificação, caso desejada pela equipe, deve continuar opcional e claramente indicada.
-4. Conferir como a equipe responsável acessará as respostas. Não publicar respostas automaticamente.
-5. Fazer um envio de teste identificado como tal e conferir o registro no destino. Abrir o formulário não demonstra envio.
+O estado do catálogo é `FORM_STATUS = 'pronto'`. As páginas convidam a pessoa a responder ao formulário depois de **ler a situação integral do cartaz e ouvir o áudio original**, indicando o número e o título do capítulo que deve selecionar. A abertura ocorre em outra aba e preserva a URL existente.
 
-Após esses ajustes, mudar `FORM_STATUS` de `preparacao` para `pronto` em `assets/js/conteudo.js` e regenerar as páginas. A prévia usa “Abrir formulário da ação” e informa que ele ainda está em preparação. No estado pronto, a página retoma “Compartilhar minha reflexão”.
+O Calendário Consciente é um material do **SENAC EAD PORTÃO**, embasado no livro *Pequeno manual antirracista*, de Djamila Ribeiro. O site apresenta os mesmos textos de situação e perguntas dos cartazes, aproximando a experiência digital da sequência impressa: situação → áudio pelo QR code → formulário.
 
-O site conserva o link externo existente; a configuração dos campos precisa ser feita no Forms pela conta responsável.
+Nenhuma resposta é guardada pelo site. A confirmação de envio, as configurações de identificação e o acesso às respostas pertencem ao Microsoft Forms e à conta responsável. A conferência visual dos campos não incluiu um teste de envio.

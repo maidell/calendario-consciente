@@ -1,8 +1,10 @@
 # Calendário Consciente
 
-Pequenas Escutas, Grandes Reflexões — Faculdade Senac Portão.
+Pequenas Escutas, Grandes Reflexões — SENAC EAD PORTÃO.
 
-Prévia estática com 11 cards, sorteio sem repetição na sessão, reflexões em texto e formulário externo existente. Djamila Ribeiro é a referência principal; outras vozes aparecem com links para seus próprios perfis.
+O Calendário Consciente é uma ação educativa com 11 capítulos para reconhecer o racismo no cotidiano e transformar a reflexão em atitudes. O material tem como embasamento o livro *Pequeno manual antirracista*, de Djamila Ribeiro, com situações e reflexões autorais da equipe do **SENAC EAD PORTÃO**. Outras vozes aparecem como referências complementares, com links para seus próprios perfis.
+
+Cada capítulo segue a experiência dos cartazes: **ler a situação integral do cartaz → ouvir o áudio original → responder ao formulário**. Os títulos, as situações e as perguntas de reflexão dos 11 capítulos foram conferidos com os cartazes impressos; o capítulo 2 conserva seus três parágrafos. O card “Versão impressa” foi removido das páginas dos capítulos. A página inicial apresenta os 11 cards e permite sorteá-los sem repetição na sessão.
 
 ## Testar localmente
 
@@ -23,13 +25,13 @@ Os **11 capítulos têm as gravações enviadas em 05/11/2026**, ligadas ao play
 
 O mapeamento dos nomes originais, hashes e durações está em `assets/audio/gravacoes-manifest.json`. Para repetir a importação, executar `python scripts/import-audios.py --source CAMINHO_DOS_ARQUIVOS`. Os originais não são alterados. As antigas leituras automáticas dos capítulos 1, 6 e 8 permanecem como arquivos de prévia e não são usadas pelos players atuais.
 
-O capítulo 7 recebeu uma nova reflexão coerente com o card “Leia autores negros”; revisar editorialmente antes do lançamento. Os testes de áudio antigos permanecem em `c1/teste-audio.html` e `c2/teste-audio.html`, com as gravações existentes preservadas.
+Os testes de áudio antigos permanecem em `c1/teste-audio.html` e `c2/teste-audio.html`, com as gravações existentes preservadas.
 
-Os conteúdos e os caminhos dos áudios ficam em `assets/js/conteudo.js`; após alterá-los, executar `node scripts/generate-pages.mjs` para atualizar as páginas HTML. O player compartilhado fica em `assets/js/player.js`. Os textos de aprofundamento continuam disponíveis como leitura sobre cada tema; não foram apresentados como transcrições verificadas das novas gravações.
+Os conteúdos e os caminhos dos áudios ficam em `assets/js/conteudo.js`; após alterá-los, executar `node scripts/generate-pages.mjs` para atualizar as páginas HTML. O fluxo compartilhado dos capítulos fica em `assets/js/experiencia.js` e o player em `assets/js/player.js`. Os textos de aprofundamento continuam disponíveis como leitura sobre cada tema; não foram apresentados como transcrições verificadas das novas gravações.
 
 Nenhuma resposta é guardada pelo site. O botão de reflexão abre o Microsoft Forms da ação em outra aba; a confirmação de envio e as configurações de identificação pertencem ao formulário.
 
-Na inspeção, o Forms ainda tinha somente “Opção 1” e “Opção 2”, sem campo de reflexão. A prévia sinaliza esse estado por `FORM_STATUS = 'preparacao'`. Os ajustes necessários estão em `docs/CONFIGURAR-FORMULARIO.md`.
+O Forms foi conferido no navegador em **05/11/2026**: a lista suspensa apresenta os 11 capítulos corretos e há três campos abertos para reflexão/aprendizado, atitudes e mensagem/compromisso. Nenhuma resposta foi enviada. O catálogo usa `FORM_STATUS = 'pronto'`; o registro da conferência está em `docs/CONFIGURAR-FORMULARIO.md`.
 
 O site pode ser servido como arquivos estáticos. Antes de publicar, confirmar a origem da hospedagem que mantém `maidell.github.io/calendario-consciente/`, pois os QR codes impressos usam esse endereço. O comando local não faz publicação nem push.
 

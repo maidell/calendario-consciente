@@ -123,7 +123,7 @@ p { margin-bottom: 1.1em; }
 .breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-block: 24px 25px; color: var(--muted); font-size: .77rem; }
 .breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
 .chapter-entry { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 350px); gap: 72px; align-items: start; padding-bottom: 72px; }
-.chapter-main { min-width: 0; }
+.chapter-main { min-width: 0; max-width: 860px; }
 .chapter-main h1 { margin-bottom: 25px; font-size: clamp(2.6rem, 4.3vw, 4rem); max-width: 17ch; }
 .chapter-main .eyebrow { margin-bottom: 18px; }
 .chapter-intro, .chapter-summary { font-size: 1.02rem; line-height: 1.8; color: #4f6052; }
@@ -235,6 +235,12 @@ p { margin-bottom: 1.1em; }
 .chapter-heading > p:last-child { margin-bottom: 0; color: var(--muted); font-size: 1.04rem; }
 .chapter-entry { padding-bottom: 16px; }
 .chapter-core { min-width: 0; }
+.experience-nav { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-bottom: 32px; padding-block: 14px; border-block: 1px solid var(--line); }
+.experience-nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--green); font-size: .8rem; font-weight: 650; text-decoration: none; }
+.experience-nav a:hover { color: var(--orange); text-decoration: underline; }
+.poster-situation { color: #3f5545; font-size: 1.05rem; line-height: 1.85; }
+.poster-situation p:last-child { margin-bottom: 0; }
+.chapter-experience > section { scroll-margin-top: 24px; }
 .situation-label { margin-bottom: 16px !important; font: 700 .65rem/1.5 var(--sans); letter-spacing: .12em; }
 .situation-summary { font-size: 1.03rem; line-height: 1.85; color: #3f5545; }
 .action-note { display: flex; align-items: flex-start; gap: 12px; padding: 5px 0 5px 15px; border-left-width: 2px; }
@@ -417,6 +423,8 @@ p { margin-bottom: 1.1em; }
   .brand-name { font-size: 1rem; }
   .chapter-heading > p:last-child { font-size: .95rem; }
   .situation-summary { font-size: .98rem; }
+  .poster-situation { font-size: .98rem; }
+  .experience-nav { flex-direction: column; gap: 0; }
   .about-section { grid-template-columns: 1fr; gap: 0; padding: 27px 23px; }
   .about-symbol { display: none; }
   .voice-card { padding: 21px 18px; }
