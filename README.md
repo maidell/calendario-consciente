@@ -31,7 +31,7 @@ Os conteúdos e os caminhos dos áudios ficam em `assets/js/conteudo.js`; após 
 
 Nenhuma resposta é guardada pelo site. O botão de reflexão abre o Microsoft Forms da ação em outra aba; a confirmação de envio e as configurações de identificação pertencem ao formulário.
 
-O Forms foi conferido no navegador em **05/11/2026**: a lista suspensa apresenta os 11 capítulos corretos e há três campos abertos para reflexão/aprendizado, atitudes e mensagem/compromisso. Nenhuma resposta foi enviada. O catálogo usa `FORM_STATUS = 'pronto'`; o registro da conferência está em `docs/CONFIGURAR-FORMULARIO.md`.
+O [Forms revisado](https://forms.cloud.microsoft/r/xz3tNcRzQU) foi conferido no navegador em **05/11/2026**: a seleção de um dos 11 capítulos mostra três perguntas abertas específicas sobre a percepção da situação. Os enunciados estão em negrito e cada capítulo oferece um link opcional para enviar áudio, foto ou vídeo pelo OneDrive. O acesso ao formulário não exige login. Nenhuma resposta foi enviada nos testes. O catálogo usa `FORM_STATUS = 'pronto'`; o registro da conferência está em `docs/CONFIGURAR-FORMULARIO.md`.
 
 O site pode ser servido como arquivos estáticos. Antes de publicar, confirmar a origem da hospedagem que mantém `maidell.github.io/calendario-consciente/`, pois os QR codes impressos usam esse endereço. O comando local não faz publicação nem push.
 

@@ -2,9 +2,9 @@
 // Reflexões autorais extraídas da proposta completa; capítulo 7 alinhado ao card.
 // Os caminhos das imagens são relativos à raiz do site, inclusive sob um prefixo de projeto.
 // Nenhuma gravação de teste é associada a um capítulo por este catálogo.
-// Forms conferido em 05/11/2026: 11 capítulos e campos para reflexão disponíveis.
+// Forms revisado em 05/11/2026: perguntas abertas específicas para cada um dos 11 capítulos.
 export const FORM_STATUS = 'pronto';
-export const FORM_URL = "https://forms.cloud.microsoft/pages/responsepage.aspx?id=TXb95_9G7kGMjOQeiklo7XP4ECtv_c5GjTW5LO9W11JUMDdZWkIxS0VMUzg2VEs3T0ZYQkpOTzNUTS4u&route=shorturl";
+export const FORM_URL = "https://forms.cloud.microsoft/r/xz3tNcRzQU";
 
 export const CREDITO = "Embasado em Pequeno manual antirracista, de Djamila Ribeiro. Equipe: Maidel, Renata e Daniel.";
 
