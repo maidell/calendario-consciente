@@ -4,6 +4,7 @@ import { readFile, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { CAPITULOS, FORM_URL } from '../assets/js/conteudo.js';
 import { chooseChapter, readSeen, escapeHtml } from '../assets/js/site.js';
+import { renderPlayer } from '../assets/js/player.js';
 
 const root = new URL('../', import.meta.url);
 test('o sorteio percorre os 11 cards sem repetir e reinicia o ciclo', () => {
@@ -54,4 +55,37 @@ test('a página de teste editada do capítulo 2 mantém a gravação escolhida p
   const legacy=await readFile(new URL('c2/teste-audio.html',root),'utf8');
   assert.match(legacy,/src="ab\.m4a"/);
   await access(new URL('c2/ab.m4a',root));
+});
+
+test('as 11 gravações enviadas estão no capítulo certo e preservam os arquivos importados', async () => {
+  const manifest=JSON.parse(await readFile(new URL('assets/audio/gravacoes-manifest.json',root),'utf8'));
+  assert.deepEqual(manifest.files.map(item=>item.chapter),CAPITULOS.map(card=>card.id));
+  assert.equal(new Set(manifest.files.map(item=>item.sha256)).size,11);
+  for(const item of manifest.files) {
+    const card=CAPITULOS.find(card=>card.id===item.chapter);
+    assert.equal(card.audio,`assets/audio/cap${card.id}.mp4`);
+    assert.equal(item.file,`cap${card.id}.mp4`);
+    assert.match(item.sourceFile,new RegExp(`^Cap${card.id}_edit(?:ada)?\\.mp4$`));
+    assert.ok(item.durationSeconds>0);
+    assert.equal(item.audioTrackCount,1);
+    assert.equal(item.audioCodec,'mp4a');
+    const media=await readFile(new URL(card.audio,root));
+    assert.equal(media.length,item.bytes);
+    assert.equal(media.toString('ascii',4,8),'ftyp');
+    assert.equal(createHash('sha256').update(media).digest('hex'),item.sha256);
+  }
+});
+
+test('o HTML e o player compartilhado usam a gravação correspondente em todos os capítulos', async () => {
+  for(const card of CAPITULOS) {
+    const markup=renderPlayer(card,path=>`../${path}`);
+    const html=await readFile(new URL(`c${card.id}/index.html`,root),'utf8');
+    assert.ok(markup.includes(`src="../${card.audio}"`));
+    assert.ok(markup.includes(`Ouvir a reflexão do capítulo ${card.id}`));
+    assert.ok(html.includes(markup));
+    assert.ok(html.includes('id="reflexao-completa"'));
+    assert.ok(!markup.includes('-previa.wav'));
+    assert.ok(!markup.includes('voz automática'));
+    assert.ok(!markup.includes('transcrição'));
+  }
 });

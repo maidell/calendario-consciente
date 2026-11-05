@@ -11,6 +11,7 @@ export const CREDITO = "Inspirado em Pequeno manual antirracista, de Djamila Rib
 export const CAPITULOS = [
   {
     "id": 1,
+    "audio": "assets/audio/cap1.mp4",
     "titulo": "Informe-se sobre o racismo",
     "tema": "Racismo no cotidiano",
     "chamada": "O racismo está só nas ofensas?",
@@ -53,6 +54,7 @@ export const CAPITULOS = [
   },
   {
     "id": 2,
+    "audio": "assets/audio/cap2.mp4",
     "titulo": "Enxergue a negritude",
     "tema": "Escuta e reconhecimento",
     "chamada": "Ter amigos negros é suficiente para reconhecer o racismo?",
@@ -93,6 +95,7 @@ export const CAPITULOS = [
   },
   {
     "id": 3,
+    "audio": "assets/audio/cap3.mp4",
     "titulo": "Reconheça os privilégios da branquitude",
     "tema": "Branquitude e oportunidades",
     "chamada": "O que passa despercebido para você?",
@@ -135,6 +138,7 @@ export const CAPITULOS = [
   },
   {
     "id": 4,
+    "audio": "assets/audio/cap4.mp4",
     "titulo": "Perceba o racismo internalizado em você",
     "tema": "Desigualdades naturalizadas",
     "chamada": "O que faz uma desigualdade parecer natural?",
@@ -177,6 +181,7 @@ export const CAPITULOS = [
   },
   {
     "id": 5,
+    "audio": "assets/audio/cap5.mp4",
     "titulo": "Apoie políticas educacionais afirmativas",
     "tema": "Educação e equidade",
     "chamada": "Oportunidades iguais começam no mesmo lugar?",
@@ -219,6 +224,7 @@ export const CAPITULOS = [
   },
   {
     "id": 6,
+    "audio": "assets/audio/cap6.mp4",
     "titulo": "Transforme seu ambiente de trabalho",
     "tema": "Trabalho e reconhecimento",
     "chamada": "Quem recebe espaço para participar?",
@@ -261,6 +267,7 @@ export const CAPITULOS = [
   },
   {
     "id": 7,
+    "audio": "assets/audio/cap7.mp4",
     "titulo": "Leia autores negros",
     "tema": "Leitura e outras histórias",
     "chamada": "Quantas histórias estão fora do nosso olhar?",
@@ -303,6 +310,7 @@ export const CAPITULOS = [
   },
   {
     "id": 8,
+    "audio": "assets/audio/cap8.mp4",
     "titulo": "Questione a cultura que você consome",
     "tema": "Cultura e representação",
     "chamada": "Quem ganha espaço nas histórias que consumimos?",
@@ -345,6 +353,7 @@ export const CAPITULOS = [
   },
   {
     "id": 9,
+    "audio": "assets/audio/cap9.mp4",
     "titulo": "Conheça seus desejos e afetos",
     "tema": "Afetos e referências de beleza",
     "chamada": "Nossas preferências também têm história?",
@@ -387,6 +396,7 @@ export const CAPITULOS = [
   },
   {
     "id": 10,
+    "audio": "assets/audio/cap10.mp4",
     "titulo": "Combata a violência racial",
     "tema": "Escuta e julgamentos",
     "chamada": "Que vidas recebem nossa empatia?",
@@ -429,6 +439,7 @@ export const CAPITULOS = [
   },
   {
     "id": 11,
+    "audio": "assets/audio/cap11.mp4",
     "titulo": "Sejamos todos antirracistas",
     "tema": "Compromisso e continuidade",
     "chamada": "O que muda depois da reflexão?",
