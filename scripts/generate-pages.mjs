@@ -34,7 +34,7 @@ for (const card of CAPITULOS) {
     ${renderExperience(card, path => `../${path}`)}
     <details class="full-reflection" id="reflexao-completa"><summary>Aprofundar esta reflexão em texto</summary><div class="reading-body">${card.reflexao.map(text => `<p>${e(text)}</p>`).join('')}<p class="text-credit">Reflexão autoral embasada em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></details>
   </div></main>
-  <footer class="site-footer" id="rodape"><div class="footer-inner wrap"><p>Calendário Consciente · <strong>SENAC EAD PORTÃO</strong><br>Material embasado em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></footer>
+  <footer class="site-footer" id="rodape"><div class="footer-inner wrap"><p>Calendário Consciente · Equipe: <strong>Maidel, Renata e Daniel</strong><br>Material embasado em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></footer>
   <noscript><div class="noscript-message"><p>Você pode ler a situação, ouvir o áudio e responder ao formulário acima. Para usar o sorteio e os controles adicionais de velocidade, ative o JavaScript.</p><p><a href="../index.html">Voltar ao início</a></p></div></noscript>
 </body>
 </html>

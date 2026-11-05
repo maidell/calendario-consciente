@@ -38,7 +38,7 @@ try {
     <div class="chapter-bottom"><details class="full-reflection" id="reflexao-completa"><summary>Aprofundar esta reflexão em texto</summary><div class="reading-body">${card.reflexao.map(p => `<p>${e(p)}</p>`).join('')}<p class="text-credit">Reflexão autoral embasada em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></details>
       ${renderReferences(card)}
       <div class="next-actions"><p>Uma conversa pode levar a outra.</p><div><button class="button button-green" data-sortear>${icon('shuffle')} Sortear outro card</button><a class="button button-outline" href="${url('#capitulos')}">Ver os 11 cards ${icon('arrow')}</a></div></div>
-      <p class="chapter-mini-credit">Este material tem como embasamento o livro <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro. Situações e reflexões autorais da equipe do <strong>SENAC EAD PORTÃO</strong>.</p>
+      <p class="chapter-mini-credit">Este material tem como embasamento o livro <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro. Equipe: <strong>Maidel, Renata e Daniel</strong>.</p>
     </div>
   </div>`;
   bindDraw();

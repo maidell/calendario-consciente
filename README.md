@@ -1,8 +1,8 @@
 # Calendário Consciente
 
-Pequenas Escutas, Grandes Reflexões — SENAC EAD PORTÃO.
+Pequenas Escutas, Grandes Reflexões — Maidel, Renata e Daniel.
 
-O Calendário Consciente é uma ação educativa com 11 capítulos para reconhecer o racismo no cotidiano e transformar a reflexão em atitudes. O material tem como embasamento o livro *Pequeno manual antirracista*, de Djamila Ribeiro, com situações e reflexões autorais da equipe do **SENAC EAD PORTÃO**. Outras vozes aparecem como referências complementares, com links para seus próprios perfis.
+O Calendário Consciente é uma ação educativa com 11 capítulos para reconhecer o racismo no cotidiano e transformar a reflexão em atitudes. O material tem como embasamento o livro *Pequeno manual antirracista*, de Djamila Ribeiro. Equipe: **Maidel, Renata e Daniel**. Outras vozes aparecem como referências complementares, com links para seus próprios perfis.
 
 Cada capítulo segue a experiência dos cartazes: **ler a situação integral do cartaz → ouvir o áudio original → responder ao formulário**. Os títulos, as situações e as perguntas de reflexão dos 11 capítulos foram conferidos com os cartazes impressos; o capítulo 2 conserva seus três parágrafos. O card “Versão impressa” foi removido das páginas dos capítulos. A página inicial apresenta os 11 cards e permite sorteá-los sem repetição na sessão.
 

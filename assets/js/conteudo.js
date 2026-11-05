@@ -6,7 +6,7 @@
 export const FORM_STATUS = 'pronto';
 export const FORM_URL = "https://forms.cloud.microsoft/pages/responsepage.aspx?id=TXb95_9G7kGMjOQeiklo7XP4ECtv_c5GjTW5LO9W11JUMDdZWkIxS0VMUzg2VEs3T0ZYQkpOTzNUTS4u&route=shorturl";
 
-export const CREDITO = "Embasado em Pequeno manual antirracista, de Djamila Ribeiro. Situações e reflexões autorais da equipe do SENAC EAD PORTÃO.";
+export const CREDITO = "Embasado em Pequeno manual antirracista, de Djamila Ribeiro. Equipe: Maidel, Renata e Daniel.";
 
 export const CAPITULOS = [
   {

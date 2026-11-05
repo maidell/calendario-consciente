@@ -10,6 +10,6 @@ O formulário abre com o título **Registro de participação no projeto: Pequen
 
 O estado do catálogo é `FORM_STATUS = 'pronto'`. As páginas convidam a pessoa a responder ao formulário depois de **ler a situação integral do cartaz e ouvir o áudio original**, indicando o número e o título do capítulo que deve selecionar. A abertura ocorre em outra aba e preserva a URL existente.
 
-O Calendário Consciente é um material do **SENAC EAD PORTÃO**, embasado no livro *Pequeno manual antirracista*, de Djamila Ribeiro. O site apresenta os mesmos textos de situação e perguntas dos cartazes, aproximando a experiência digital da sequência impressa: situação → áudio pelo QR code → formulário.
+O Calendário Consciente tem como equipe **Maidel, Renata e Daniel** e é embasado no livro *Pequeno manual antirracista*, de Djamila Ribeiro. O site apresenta os mesmos textos de situação e perguntas dos cartazes, aproximando a experiência digital da sequência impressa: situação → áudio pelo QR code → formulário.
 
 Nenhuma resposta é guardada pelo site. A confirmação de envio, as configurações de identificação e o acesso às respostas pertencem ao Microsoft Forms e à conta responsável. A conferência visual dos campos não incluiu um teste de envio.
