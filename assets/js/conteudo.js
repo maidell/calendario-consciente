@@ -4,7 +4,7 @@
 // Nenhuma gravação de teste é associada a um capítulo por este catálogo.
 // Forms revisado em 05/11/2026: perguntas abertas específicas para cada um dos 11 capítulos.
 export const FORM_STATUS = 'pronto';
-export const FORM_URL = "https://forms.cloud.microsoft/r/xz3tNcRzQU";
+export const FORM_URL = "https://forms.cloud.microsoft/r/J6cNUkWmf1";
 
 export const CREDITO = "Embasado em Pequeno manual antirracista, de Djamila Ribeiro. Equipe: Maidel, Renata e Daniel.";
 
