@@ -2,7 +2,7 @@ import { readFile, writeFile, copyFile, access } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { CAPITULOS } from '../assets/js/conteudo.js';
-import { escapeHtml as e, renderFooter } from '../assets/js/site.js';
+import { escapeHtml as e, renderHeader, renderFooter } from '../assets/js/site.js';
 import { renderExperience } from '../assets/js/experiencia.js';
 
 const root = new URL('../', import.meta.url);
@@ -28,6 +28,7 @@ for (const card of CAPITULOS) {
 </head>
 <body data-capitulo="${card.id}">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="cabecalho">${renderHeader(path => `../index.html${path}`)}</header>
   <main id="conteudo"><div class="wrap chapter-main">
     <nav class="breadcrumb" aria-label="Você está em"><a href="../index.html">Início</a><span aria-hidden="true">›</span><a href="../index.html#capitulos">Os 11 cards</a><span aria-hidden="true">›</span><span aria-current="page">Card ${String(card.id).padStart(2,'0')}</span></nav>
     <header class="chapter-heading"><h1>${e(card.titulo)}</h1><p>${e(card.chamada)}</p></header>

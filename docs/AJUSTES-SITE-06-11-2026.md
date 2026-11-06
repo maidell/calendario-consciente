@@ -24,3 +24,7 @@ As 11 páginas de capítulo foram regeneradas. Sintaxe e sete testes existentes 
 ## Envio ao repositório
 
 Destino confirmado: `https://github.com/maidell/calendario-consciente.git`, branch `main`, com publicação em `https://maidell.github.io/calendario-consciente/`. O clone foi atualizado por avanço direto para preservar os três commits remotos anteriores. A integração compara cada fonte com a base revisada e copia somente os arquivos desta alteração.
+
+## Correção mobile e navbar
+
+A navbar oferece somente o botão “Como funciona”, inclusive no HTML sem JavaScript. Em telas de até 760 px, a etiqueta verde fica abaixo da foto, sem rotação nem sobreposição. Os botões de participação e de referência ficam organizados em coluna nas telas mais estreitas. As setas textuais foram substituídas por SVG para evitar apresentação como emojis no iOS.
