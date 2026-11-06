@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-06",
+  "tool": "ImageGen integrado",
+  "purpose": "Miniaturas sem texto para a galeria; cartazes originais preservados.",
+  "basePrompt": "Use case: precise-object-edit. Asset type: landscape website card thumbnail, approximately 16:9, edge-to-edge illustration. Input image 1 is the edit target: an existing Portuguese educational poster. Extract and adapt ONLY its narrative illustration into a standalone landscape image; discard all poster layout, typography, captions, labels, questions, QR codes, logos, ornamental page corners, chapter numbers and credits. Preserve the original scene, main people, faces, skin tones, hair, clothing, objects, warm cream/terracotta/mustard/deep-green palette and hand-drawn editorial illustration texture. Recompose to wide format while retaining all main people's heads and natural hands. All surfaces must be free of text or letter-like marks, including boards, book covers, badges and paper. No speech bubbles or empty text panels. No watermark. Do not add new people.",
+  "files": [
+    {
+      "chapter": 1,
+      "file": "assets/imagens/galeria/cap1.webp",
+      "source": "exec-e5d11429-f888-4e16-88e0-261c37585efa.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 96772,
+      "sha256": "d2af8238b1b34384ecebd8cfe048e7c43425583dcc5cb0cf6d97722fec02639f",
+      "promptSuffix": "Preserve the three adults talking around a study/work table: Black woman at left in orange cardigan and patterned yellow/black headband; bearded man with glasses in a dark green shirt at center; woman in mustard yellow at right. Preserve laptop, mugs, notebooks, books, shelves, plants and classroom background. Remove writing on the left wall sign and any notes, replace with blank colored board/art or clean background."
+    },
+    {
+      "chapter": 2,
+      "file": "assets/imagens/galeria/cap2.webp",
+      "source": "exec-5d9a7ee7-bc3d-4eb8-9474-78c59c605387.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 92488,
+      "sha256": "f16105664678db80a80df0e55c486026cd0675db283bc9a48a54af0582a9c0d1",
+      "promptSuffix": "Preserve four friends conversing in a room with plants and books: Black man in dark hoodie seen from side/back at left; young light-skinned man in a white shirt gesturing at center; Black woman with braids, yellow shirt and hoop earrings at center-right; woman with long black hair in green seen from behind at right. Remove the speech bubble entirely, rebuilding the room background behind it. Preserve attentive expressions and composition."
+    },
+    {
+      "chapter": 4,
+      "file": "assets/imagens/galeria/cap4.webp",
+      "source": "exec-91e8562e-c280-4315-afa4-233f6557880d.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 84518,
+      "sha256": "29c334559ee4fc3c2636b41d47f51fd88c8fe4cf087e7e4b0c4d7d0d2b2cc571",
+      "promptSuffix": "Preserve the restaurant scene: three friends at a table in foreground, a man in green at left, Black woman with curly hair in orange at center, long-haired woman in dark clothing at right. Preserve the restaurant kitchen and staff in the background, with warm lighting, plants and table glasses. Remove the large title panel above the foreground group and extend the restaurant architecture into that area. Do not change the roles or appearance of the people."
+    },
+    {
+      "chapter": 6,
+      "file": "assets/imagens/galeria/cap6.webp",
+      "source": "exec-1a69faad-83e2-4a8a-8409-536864876cd8.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 98726,
+      "sha256": "1d284bee1b1e1394c58f460a404b55bb71c14c7ce3f262b20e8682d8932a2380",
+      "promptSuffix": "Preserve the inclusive workplace/school meeting with six adults around a table, Black woman leader standing near center-right in orange cardigan, curly updo, glasses and lanyard, holding notebook and gesturing; seated colleagues listen with laptop, books and notebooks. Remove all title lettering and all writing on chalkboard/whiteboard; replace writing with blank board surfaces and subtle abstract shapes. Preserve people and professional meeting setting."
+    },
+    {
+      "chapter": 7,
+      "file": "assets/imagens/galeria/cap7.webp",
+      "source": "exec-8a7cf7e9-2809-4355-806a-1f6c513e3b5b.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 82408,
+      "sha256": "dd57d32be7ae21032a882639d80dab83c9278fd469d346cac0a1d8e276b7a94c",
+      "promptSuffix": "Preserve the library/classroom reading scene: Black woman with natural curly hair, hoop earrings and orange cardigan standing and reading an open dark book; four students gathered around a table with laptops, books and bottle, including man in dark hoodie at left, long-haired woman in green, braided Black woman in yellow foreground, young man in white at right. Remove title panel and ALL writing from book cover and whiteboard. Preserve book as a plain dark cover, shelves and plants."
+    },
+    {
+      "chapter": 9,
+      "file": "assets/imagens/galeria/cap9.webp",
+      "source": "exec-bbada791-4c7b-41ab-b5a6-38916bcf8e8f.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 68990,
+      "sha256": "6f8185c1b5b110fc073a8ba8ffd32be7d8ffad7b3944ec5dea820076a6927762",
+      "promptSuffix": "Preserve the composition and four character identities: central/right happy Black couple smiling toward each other, woman wearing patterned mustard/orange headband, orange shirt over cream top, green bottoms and shoulder tote, man in green overshirt and cream shirt. Preserve two smaller reflective portraits from source, woman with curly hair in orange and Black man with glasses in green, arranged as tasteful smaller circular insets. Remove ALL typography, QR codes and text blocks. Keep warm cream background, ochre circle behind couple and terracotta/green accents. Landscape composition with natural space around people."
+    },
+    {
+      "chapter": 10,
+      "file": "assets/imagens/galeria/cap10.webp",
+      "source": "exec-357f8585-a293-4d6e-bb9c-3bf91134fb90.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 184480,
+      "sha256": "a6e7ae2234b4b59d9b51198408250c25b6aabebe6ce782a944d3727594c432d6",
+      "promptSuffix": "Preserve the young Black man with short locs, mustard yellow overshirt, white T-shirt and backpack from source as a large portrait at left; preserve two smaller illustrated scenes on right: the same man studying/writing at a desk and smiling with two Black friends at a table. Remove all chapter lettering, titles, questions, labels, QR codes and body text. Keep the collage format with cream dividers, deep-green/terracotta/mustard screenprint style and textured paper. All notebooks and books contain no text."
+    }
+  ],
+  "crops": {
+    "3": [
+      0,
+      400,
+      1200,
+      660
+    ],
+    "5": [
+      0,
+      450,
+      1200,
+      550
+    ],
+    "8": [
+      0,
+      550,
+      1200,
+      415
+    ],
+    "11": [
+      0,
+      390,
+      1200,
+      700
+    ]
+  }
+}

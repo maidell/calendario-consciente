@@ -2,7 +2,7 @@ import { readFile, writeFile, copyFile, access } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { CAPITULOS } from '../assets/js/conteudo.js';
-import { escapeHtml as e } from '../assets/js/site.js';
+import { escapeHtml as e, renderFooter } from '../assets/js/site.js';
 import { renderExperience } from '../assets/js/experiencia.js';
 
 const root = new URL('../', import.meta.url);
@@ -28,13 +28,13 @@ for (const card of CAPITULOS) {
 </head>
 <body data-capitulo="${card.id}">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" id="cabecalho"></header>
   <main id="conteudo"><div class="wrap chapter-main">
-    <header class="chapter-heading"><p class="eyebrow">Card ${card.id} de 11</p><h1>${e(card.titulo)}</h1></header>
+    <nav class="breadcrumb" aria-label="Você está em"><a href="../index.html">Início</a><span aria-hidden="true">›</span><a href="../index.html#capitulos">Os 11 cards</a><span aria-hidden="true">›</span><span aria-current="page">Card ${String(card.id).padStart(2,'0')}</span></nav>
+    <header class="chapter-heading"><h1>${e(card.titulo)}</h1><p>${e(card.chamada)}</p></header>
     ${renderExperience(card, path => `../${path}`)}
     <details class="full-reflection" id="reflexao-completa"><summary>Aprofundar esta reflexão em texto</summary><div class="reading-body">${card.reflexao.map(text => `<p>${e(text)}</p>`).join('')}<p class="text-credit">Reflexão autoral embasada em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></details>
   </div></main>
-  <footer class="site-footer" id="rodape"><div class="footer-inner wrap"><p>Calendário Consciente · Equipe: <strong>Maidel, Renata e Daniel</strong><br>Material embasado em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></footer>
+  <footer class="site-footer" id="rodape">${renderFooter()}</footer>
   <noscript><div class="noscript-message"><p>Você pode ler a situação, ouvir o áudio e responder ao formulário acima. Para usar o sorteio e os controles adicionais de velocidade, ative o JavaScript.</p><p><a href="../index.html">Voltar ao início</a></p></div></noscript>
 </body>
 </html>

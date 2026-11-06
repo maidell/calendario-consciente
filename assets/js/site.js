@@ -10,9 +10,12 @@ const paths = {
   expand:'<path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>'
 };
 export function icon(name) { return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] ?? paths.arrow}</svg>`; }
+export function renderFooter() {
+  return `<div class="footer-inner wrap"><div><p class="footer-label">Pequenas escutas, Grandes reflexões</p><p><strong>Calendário Consciente · Mês da Consciência Negra</strong></p><p class="footer-team"><strong>Concepção e desenvolvimento do projeto · Equipe EAD</strong><br>Daniel Kaiss, Mateus Maidel, Renata Largura de Lima Furtado e Lilian de Almeida Ribeiro.</p></div><div class="footer-note"><p><strong>Referência e conteúdo</strong></p><p>Material inspirado na obra <cite>Pequeno Manual Antirracista</cite>, de Djamila Ribeiro.<br>Situações e reflexões autorais · participação voluntária.</p><p>Respeito, diversidade e práticas antirracistas no cotidiano.</p></div></div>`;
+}
 export function renderShared() {
-  document.querySelector('#cabecalho').innerHTML = `<div class="header-inner wrap"><a class="brand" href="${url()}" aria-label="Calendário Consciente — início"><span class="brand-icon" aria-hidden="true">${icon('sun')}</span><span class="brand-name">calendário<br>consciente.</span></a><nav class="header-nav" aria-label="Navegação principal"><a href="${url('#como-funciona')}">Como funciona</a><a href="${url('#capitulos')}">Os 11 cards</a><div class="institution">Equipe<strong>Maidel, Renata e Daniel</strong></div></nav></div>`;
-  document.querySelector('#rodape').innerHTML = `<div class="footer-inner wrap"><div><p class="footer-label">Pequenas escutas, grandes reflexões</p><p><strong>Calendário Consciente</strong><br>Equipe: <strong>Maidel, Renata e Daniel</strong><br>Respeito, diversidade e uma prática antirracista no cotidiano.</p></div><p class="footer-note">Material baseado no livro <cite>Pequeno manual antirracista</cite>, de <strong>Djamila Ribeiro</strong>.<br>Situações e reflexões autorais · participação voluntária.</p></div>`;
+  const footer = document.querySelector('#rodape');
+  if (footer) footer.innerHTML = renderFooter();
   document.querySelectorAll('[data-icon]').forEach(element => { element.innerHTML = icon(element.dataset.icon); });
 }
 const STORAGE_KEY = 'calendario-consciente:sorteados:v1';

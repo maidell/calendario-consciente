@@ -15,10 +15,12 @@ function bindPlayer() {
   const format = value => Number.isFinite(value) ? `${Math.floor(value/60)}:${String(Math.floor(value%60)).padStart(2,'0')}` : '';
   const ready = () => { if (audio.paused && audio.currentTime === 0) status.textContent = `Pronto para ouvir${format(audio.duration) ? ` · ${format(audio.duration)}` : ''}`; };
   audio.addEventListener('loadedmetadata', ready);
-  audio.addEventListener('play', () => { status.textContent = 'Reproduzindo a reflexão'; });
+  audio.addEventListener('play', () => { status.classList.add('sr-only'); status.textContent = 'Reproduzindo a reflexão'; });
   audio.addEventListener('pause', () => { if (!audio.ended) status.textContent = 'Áudio pausado'; });
   audio.addEventListener('ended', () => { status.textContent = 'Escuta concluída. Agora, compartilhe sua reflexão no formulário abaixo.'; });
-  audio.addEventListener('error', () => { status.textContent = 'Não foi possível reproduzir. Você pode abrir a gravação ou ler a reflexão sobre o tema.'; });
+  const showError = () => { status.classList.remove('sr-only'); status.textContent = 'Não foi possível reproduzir o áudio. Tente novamente ou leia a reflexão em texto abaixo.'; };
+  audio.addEventListener('error', showError);
+  if (audio.error) showError();
   speed.addEventListener('change', () => { audio.playbackRate = Number(speed.value); });
   window.addEventListener('pagehide', () => audio.pause());
   if (audio.readyState >= 1) ready();
@@ -32,13 +34,12 @@ try {
   renderShared();
   document.querySelector('#conteudo').innerHTML = `<div class="wrap chapter-main">
     <nav class="breadcrumb" aria-label="Você está em"><a href="${url()}">Início</a>${icon('chevron')}<a href="${url('#capitulos')}">Os 11 cards</a>${icon('chevron')}<span aria-current="page">Card ${String(card.id).padStart(2,'0')}</span></nav>
-    <header class="chapter-heading"><p class="eyebrow">Card ${String(card.id).padStart(2,'0')} de 11 <span aria-hidden="true">/</span> ${e(card.tema)}</p><h1>${e(card.titulo)}</h1><p>${e(card.chamada)}</p></header>
+    <header class="chapter-heading"><h1>${e(card.titulo)}</h1><p>${e(card.chamada)}</p></header>
     <p class="sr-only" id="sorteio-status" role="status"></p><p class="cycle-notice" id="ciclo-status" hidden></p>
     ${renderExperience(card)}
     <div class="chapter-bottom"><details class="full-reflection" id="reflexao-completa"><summary>Aprofundar esta reflexão em texto</summary><div class="reading-body">${card.reflexao.map(p => `<p>${e(p)}</p>`).join('')}<p class="text-credit">Reflexão autoral embasada em <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro.</p></div></details>
       ${renderReferences(card)}
       <div class="next-actions"><p>Uma conversa pode levar a outra.</p><div><button class="button button-green" data-sortear>${icon('shuffle')} Sortear outro card</button><a class="button button-outline" href="${url('#capitulos')}">Ver os 11 cards ${icon('arrow')}</a></div></div>
-      <p class="chapter-mini-credit">Este material tem como embasamento o livro <cite>Pequeno manual antirracista</cite>, de Djamila Ribeiro. Equipe: <strong>Maidel, Renata e Daniel</strong>.</p>
     </div>
   </div>`;
   bindDraw();

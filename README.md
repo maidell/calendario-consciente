@@ -1,8 +1,8 @@
 # Calendário Consciente
 
-Pequenas Escutas, Grandes Reflexões — Maidel, Renata e Daniel.
+Pequenas Escutas, Grandes Reflexões — Equipe EAD: Daniel Kaiss, Mateus Maidel, Renata Largura de Lima Furtado e Lilian de Almeida Ribeiro.
 
-O Calendário Consciente é uma ação educativa com 11 capítulos para reconhecer o racismo no cotidiano e transformar a reflexão em atitudes. O material tem como embasamento o livro *Pequeno manual antirracista*, de Djamila Ribeiro. Equipe: **Maidel, Renata e Daniel**. Outras vozes aparecem como referências complementares, com links para seus próprios perfis.
+O Calendário Consciente é uma ação educativa com 11 capítulos para reconhecer o racismo no cotidiano e transformar a reflexão em atitudes. O material tem como embasamento o livro *Pequeno manual antirracista*, de Djamila Ribeiro. Concepção e desenvolvimento do projeto: **Equipe EAD — Daniel Kaiss, Mateus Maidel, Renata Largura de Lima Furtado e Lilian de Almeida Ribeiro**. Outras vozes aparecem como referências complementares, com links para seus próprios perfis.
 
 Cada capítulo segue a experiência dos cartazes: **ler a situação integral do cartaz → ouvir o áudio original → responder ao formulário**. Os títulos, as situações e as perguntas de reflexão dos 11 capítulos foram conferidos com os cartazes impressos; o capítulo 2 conserva seus três parágrafos. O card “Versão impressa” foi removido das páginas dos capítulos. A página inicial apresenta os 11 cards e permite sorteá-los sem repetição na sessão.
 
@@ -36,3 +36,7 @@ O [Forms revisado](https://forms.cloud.microsoft/r/xz3tNcRzQU) foi conferido no 
 O site pode ser servido como arquivos estáticos. Antes de publicar, confirmar a origem da hospedagem que mantém `maidell.github.io/calendario-consciente/`, pois os QR codes impressos usam esse endereço. O comando local não faz publicação nem push.
 
 Consulte o planejamento e o inventário em `docs/`.
+
+## Ajustes editoriais de 06/11/2026
+
+A versão local incorpora a apresentação, instruções, galeria simplificada e créditos de Equipe EAD indicados em `ajustes_site 1.docx`. O registro está em [docs/AJUSTES-SITE-06-11-2026.md](docs/AJUSTES-SITE-06-11-2026.md). A abertura não usa o cabeçalho adicional; os capítulos preservam a navegação de retorno e o fluxo de leitura, escuta e participação. O envio desta revisão ao repositório `maidell/calendario-consciente`, branch `main`, foi autorizado pelo usuário após a revisão local. O endereço de publicação permanece `https://maidell.github.io/calendario-consciente/`.
