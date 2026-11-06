@@ -28,3 +28,7 @@ Destino confirmado: `https://github.com/maidell/calendario-consciente.git`, bran
 ## Correção mobile e navbar
 
 A navbar oferece somente o botão “Como funciona”, inclusive no HTML sem JavaScript. Em telas de até 760 px, a etiqueta verde fica abaixo da foto, sem rotação nem sobreposição. Os botões de participação e de referência ficam organizados em coluna nas telas mais estreitas. As setas textuais foram substituídas por SVG para evitar apresentação como emojis no iOS.
+
+## Identidade preservada na navbar
+
+Após esclarecimento do usuário, foram restaurados o símbolo do sol, o nome Calendário Consciente e a identificação da Equipe EAD. Apenas o botão “Como funciona” permanece na navegação. No celular, marca e botão ficam na primeira linha e a equipe aparece abaixo.

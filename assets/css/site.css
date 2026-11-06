@@ -528,3 +528,18 @@ p { margin-bottom: 1.1em; }
   .about-actions { flex-direction: column; }
   .about-actions .button { width: 100%; }
 }
+
+/* Identidade preservada na navbar; somente Como funciona é botão de navegação. */
+.header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 16px 24px; align-items: center; padding-block: 14px; }
+.brand, .header-team { min-width: 0; }
+.header-team { margin: 0; padding-left: 22px; border-left: 1px solid var(--line); color: var(--muted); font-size: .68rem; line-height: 1.6; }
+.header-team strong { display: block; color: var(--green); font-size: .76rem; font-weight: 650; }
+@media (max-width: 760px) {
+  .header-inner { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; }
+  .brand { grid-area: 1 / 1; gap: 8px; }
+  .brand-icon, .brand-icon svg { width: 26px; height: 26px; }
+  .brand-name { font-size: 1rem; }
+  .header-nav { grid-area: 1 / 2; }
+  .site-header .header-nav .button { padding: 10px 14px; font-size: .8rem; white-space: nowrap; }
+  .header-team { grid-column: 1 / -1; padding: 8px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+}
